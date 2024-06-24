@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+// App.js
+
+import React from 'react';
 import './App.css';
+import NavBar from './component/NavBar'; // Importez votre composant NavBar
+import ParticlesBackground from './component/ParticlesBackground'; // Importez votre composant ParticlesBackground
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TexteDeroulant from './component/textDeroulant';
+import MouseIcon from './component/MouseIcon';
+// import Presentation from './component/Presentation';
+// import Footer from './component/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <header>
+        <ParticlesBackground />
+        <NavBar />
+        <div className='img'>
+          <h1>   <TexteDeroulant /></h1>
+        </div>
+        <a href="#presentation">
+         <MouseIcon/>
         </a>
       </header>
     </div>
   );
 }
+
 
 export default App;
