@@ -1,3 +1,4 @@
+/* Header , nav bar , texte deroulant ( h1 )  */
 nav {
   background-color: rgb(233, 229, 229, 0.2);
   position: fixed !important; /* Fixe la barre de navigation */
@@ -31,11 +32,7 @@ h1 {
   font-weight: 900 !important;
   font-family: 'poppins'; 
 }
-
-.particles-container{ 
-  color: blueviolet !important;
-}
-
+/* incone  */
 .mouse-icon {
 	position: absolute;
 	left: 50%;
@@ -143,25 +140,84 @@ h1 {
 		transform: translateY(0);
 	}
 }
+/* fin Icone */
+
+/* titeModule */
+.module-header {
+  margin: 0 0 50px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.module-header-left {
+  text-align: left;
+}
+
+.module-header-left .module-line {
+  width: inherit;
+  margin: 30px 0;
+}
+
+.module-title {
+  position: relative;
+  padding: 10px;
+  color: #635959;
+  font-weight: 700;
+}
+
+.module-title span {
+  color: blue;
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 110px;
+  z-index: 0;
+  opacity: 0.09;
+  font-weight: 900;
+}
+/* fin titleModule */
+
+/* partit TexteImage */
+#texte-image{ 
+margin-top: 100px;
+
+}
+ul > .progresseBarUl{
+  margin-top: 50px;
+  list-style-type: none; /* Supprime les puces des <li> */
+
+}
+.progress{ 
+  width: 350px ;
+}
+#progressBar{ 
+color: rgb(0, 0, 0);
+background-color: orange;
+}
 
 
+
+
+/* fin textImage */
 main { 
-  background: linear-gradient(to bottom, #a6e80c, #feb47b);
+  background-color: white;
   min-height: 100vh; /* Assurez-vous que le main couvre au moins toute la hauteur de la fenêtre */
   margin-top: 958px !important;
   text-align: center;
   
-}
+} 
+
+
 h2{ 
   font-size: 50px !important;
   padding: 150px !important;
 }
-.text-body-secondary {
-  text-align: justify !important;
-  font-size: 25px !important;
-  font-style: italic !important;
-  font-weight: 900;
-}
+
+
+
+
 /* Styles de base pour les éléments à animer */
 .text-body-secondary {
   text-align: justify !important;
@@ -204,6 +260,7 @@ footer {
   }
 }
 
-#presentation{
-  
+#carouselExampleControls > .carousel-inner > .carousel-item { 
+  width: 650px !important;
+  height: 400px !important;
 }

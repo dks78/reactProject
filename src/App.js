@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TexteDeroulant from './component/textDeroulant';
 import MouseIcon from './component/MouseIcon';
+
 // import Presentation from './component/Presentation';
 // import Footer from './component/footer';
 

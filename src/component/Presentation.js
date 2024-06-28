@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../App.css'; // Assurez-vous que le chemin est correct
 import MouseIcon2 from './MouseIcone2';
 
+
 const Presentation = () => {
   useEffect(() => {
     const handleScrollAnimations = () => {
@@ -35,7 +36,11 @@ const Presentation = () => {
 
   return (
     <section id="presentation" className="py-5 text-center container">
-      <h2>Qui-suis-je</h2>
+        <div className="module-header  ">
+            <h2 className="module-title scroll-animate2">Presentation
+                <span>Qui suis-je ?</span>
+            </h2>
+        </div>
       <div className="row text-center">
         <div className="me col-lg-6 col-md-8 mx-auto">
           <p className="text-body-secondary scroll-animate2">
