@@ -50,6 +50,36 @@ const TexteImage = () => {
 
   useEffect(() => {
     setPourcentageCss(75);
+  },
+  
+  []);
+  useEffect(() => {
+    const handleScrollAnimations = () => {
+      document.querySelectorAll('.scroll-animate').forEach(function (element) {
+        if (isElementInViewport(element)) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+      });
+    };
+
+    const isElementInViewport = (el) => {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+    window.addEventListener('scroll', handleScrollAnimations);
+    document.addEventListener('DOMContentLoaded', handleScrollAnimations);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollAnimations);
+      document.removeEventListener('DOMContentLoaded', handleScrollAnimations);
+    };
   }, []);
 
   return (
@@ -61,17 +91,17 @@ const TexteImage = () => {
         </h2>
       </div>
       <div className="row text-center">
-        <div className="col-lg-6 col-md-8 mx-auto">
+        <div className="col-lg-6 col-md-8 mx-auto scroll-animate">
           <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner h-100">
               <div className="carousel-item active">
-                <img className="d-block w-100 " src="/HTMLCSS.avif" alt="First slide" />
+                <img className="d-block w-100 " src="/HTMLCSS.jpg" alt="First slide" />
               </div>
               <div className="carousel-item">
                 <img className="d-block w-100  " src="/Js.jpg" alt="Second slide" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100 " src="/react.jpeg" alt="Third slide" />
+                <img className="d-block w-100 " src="/react.jpg" alt="Third slide" />
               </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">

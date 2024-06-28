@@ -241,6 +241,21 @@ h2{
   transform: translateX(0); /* Ramène l'élément à sa position initiale */
 }
 
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateX(-30px); /* Déplacement initial pour l'effet de défilement */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Animation de transition */
+}
+
+/* Styles appliqués lorsque les éléments sont visibles */
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateX(0); /* Ramène l'élément à sa position initiale */
+}
+
+
+
 footer { 
   background-color: white;
 }
@@ -261,6 +276,5 @@ footer {
 }
 
 #carouselExampleControls > .carousel-inner > .carousel-item { 
-  width: 650px !important;
-  height: 400px !important;
+
 }
