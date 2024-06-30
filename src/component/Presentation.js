@@ -50,7 +50,9 @@ const Presentation = () => {
           </p>
         </div>
         <div>
+            <a href='#competence'>
             <MouseIcon2 />
+            </a>
         </div>
       </div>
     </section>
