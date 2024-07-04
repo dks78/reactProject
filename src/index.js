@@ -8,7 +8,6 @@ import Footer from './footer';
 import Presentation from './component/Presentation';
 import TexteImageApp from './texteImage'; // Assurez-vous que le chemin est correct
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -39,6 +38,7 @@ const MainPresentation = ReactDOM.createRoot(document.getElementById('MainPresen
       <TexteImageApp />
     </React.StrictMode>
   );
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

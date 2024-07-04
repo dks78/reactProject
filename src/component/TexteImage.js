@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import MouseIcon2 from './MouseIcone2';
 
 const TexteImage = () => {
   const [pourcentage, setPourcentage] = useState(0);
@@ -127,9 +128,9 @@ const TexteImage = () => {
 
   return (
     <section id="texte-image" className="py-5 text-center ">
-      <div className='container'>
-        <div id='competence'></div>
+      <div className='container carousselprogresse'>
         <div className="module-header">
+          <div id='competence'></div>
           <h2 className="module-title scroll-animateCompétence">
             Mes Compétences
             <span>Mon parcours</span>
@@ -182,6 +183,39 @@ const TexteImage = () => {
           </div>
         </div>
       </div>
+      <a href='#'>
+        <div id='iconeTexteImg'>
+          <MouseIcon2 />
+        </div>
+      </a>
+      <section className=''>
+        <div className='realisation'>
+          <h2 className="module-title scroll-animateCompétence">
+            Mes Réalisation
+            <span>Mon parcours</span>
+          </h2>
+        </div>
+        <div class="projet2 flex-container">
+          <section class="moi">
+            <div class="image">
+              <img src="/js.jpg" alt="loup" />
+              <div class="content text-body-secondary">
+                <h4>HTML CSS</h4>
+                <p>mon but et de creé un site reconnue a l'international</p>
+              </div>
+            </div>
+          </section>
+          <section class="moi">
+            <div class="image text-body-secondary">
+              <img src="/react.jpg" alt="loup" />
+              <div class="content">
+                <h4>l'évangile</h4>
+                <p>l'évangile dois etre repandu !</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </section>
   );
 };

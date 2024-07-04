@@ -46,7 +46,7 @@ const Footer = () => {
                                 Products
                             </h6>
                             <p>
-                                <i><img src="/img/icone-html-bleue.png" style={{ width: '50px' }} alt="HTML icon" /></i>
+                            <a href="#!" className="text-reset">React</a>
                             </p>
                             <p>
                                 <a href="#!" className="text-reset">React</a>

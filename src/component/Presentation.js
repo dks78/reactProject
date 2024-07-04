@@ -42,8 +42,8 @@ const Presentation = () => {
             </h2>
         </div>
       <div className="row text-center">
-        <div className="me col-lg-6 col-md-8 mx-auto">
-          <p className="text-body-secondary scroll-animate2">
+        <div className="me col-lg-6 mx-auto">
+          <p className="text-body-secondary PresentationClasse scroll-animate2">
             Je suis un jeune développeur en formation, qui se forme en React, JS, Node.js, Python. J'ai commencé ma formation l'année dernière. 
             Passionné par Jésus-Christ, je compte bien réussir dans la vie que Dieu a pour moi. Le développement web est le métier que Dieu m'a 
             donné pour avancer dans ma vie professionnelle.
