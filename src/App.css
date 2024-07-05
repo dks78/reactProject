@@ -407,4 +407,41 @@ footer {
     padding: 0 !important;
     margin-top: 0px !important;
   }
+  .competenceTitle  span { 
+    font-size: 50px;
+  }
+.competenceTitle{
+  padding-top: 125px !important;
+  padding-bottom: 30px !important;
+  margin: 0 !important;
 }
+#carouselExampleControls{
+margin-left: 90px;
+  margin-top: 0 !important;
+  width: 65% !important; /* Assurez-vous que le carrousel prenne toute la largeur disponible */
+  display: flex;
+  justify-content: center; /* Centre le carrousel horizontalement */
+}
+.PresentationCompetence{ 
+  font-size: 15px !important;
+  padding-top: 2% !important;
+  padding-bottom: 0% !important;
+}
+.progresseBarUl{ 
+  padding: 0% !important;
+  margin: 0px !important;
+}
+.progress { 
+  height: 15px !important;
+  margin: 0% !important;
+  padding: 0%;
+  width: 240px !important;
+  margin-left: 250px !important;
+padding-bottom: 0% !important;
+}
+
+a > #iconeTexteImg{
+  background-color: aqua !important;
+}
+}
+

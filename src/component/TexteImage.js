@@ -131,7 +131,7 @@ const TexteImage = () => {
       <div className='container carousselprogresse'>
         <div className="module-header">
           <div id='competence'></div>
-          <h2 className="module-title scroll-animateCompétence">
+          <h2 className="module-title competenceTitle scroll-animateCompétence">
             Mes Compétences
             <span>Mon parcours</span>
           </h2>
