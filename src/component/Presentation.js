@@ -36,8 +36,9 @@ const Presentation = () => {
 
   return (
     <section id="presentation" className="py-5 text-center container">
-        <div className="module-header  ">
-            <h2 className="module-title scroll-animate2">Presentation
+        <div className="module-header">
+            <h2 className="module-title scroll-animate2">
+              Presentation
                 <span>Qui suis-je ?</span>
             </h2>
         </div>

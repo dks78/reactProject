@@ -387,21 +387,23 @@ footer {
 
 .module-header{ 
   margin: 0 !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
-.module-title span {
+.module-title > span {
     font-size: 50px;
+    padding-top: 0px !important;
 }
 
 .module-title {
     font-size: 30px;
-    padding: 125px !important;
+    padding-top: 125px !important;
+    padding-bottom: 25px !important;
 }
   /* fin modul title */
   .PresentationClasse{
     text-align: justify !important;
-    font-size: 20px !important;
+    font-size: 17px !important;
     font-style: italic !important;
     font-weight: 900;
     padding: 0 !important;
